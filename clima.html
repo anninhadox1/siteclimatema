@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClimaTema - Clima</title>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+
+          rel="stylesheet">
+<!-- CSS do nosso site -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- =========================
+
+     BARRA DE NAVEGAÇÃO
+
+========================== -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="flor-logo">🌸</span>
+
+           ClimaTema
+</a>
+<button class="navbar-toggler"
+
+                type="button"
+
+                data-bs-toggle="collapse"
+
+                data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav me-auto">
+<li class="nav-item">
+<a class="nav-link" href="index.html">
+
+                        Início
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="cidades.html">
+
+                        Cidades
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="clima.html">
+
+                        Clima
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="cadastro.html">
+
+                        Cadastro
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- =========================
+
+     CLIMA
+
+========================== -->
+<main class="container py-5">
+<div class="text-center mb-5">
+<h1 class="titulo-clima">
+
+            🌸 Clima da Região
+</h1>
+<p class="lead">
+
+            Veja as condições do tempo atualizadas nas cidades da nossa região.
+</p>
+<p class="text-muted">
+
+            🔄 Dados meteorológicos atualizados automaticamente
+</p>
+</div>
+
+<!-- CARDS DO CLIMA -->
+<div class="row g-4" id="cards-clima">
+<!-- AMERICANA -->
+<div class="col-md-6 col-lg-4">
+<div class="card clima-card h-100">
+<div class="card-body text-center">
+<div class="icone-clima" id="icone-americana">
+
+                        ⏳
+</div>
+<h3>Americana</h3>
+<div class="temperatura" id="temp-americana">
+
+                        --°C
+</div>
+<p id="descricao-americana">
+
+                        Carregando clima...
+</p>
+<hr>
+<p>
+
+                        💧 Umidade:
+<strong id="umidade-americana">--%</strong>
+</p>
+<p>
+
+                        🌡️ Sensação:
+<strong id="sensacao-americana">--°C</strong>
+</p>
+<p>
+
+                        💨 Vento:
+<strong id="vento-americana">-- km/h</strong>
+</p>
+</div>
+</div>
+</div>
+
+<!-- SANTA BÁRBARA -->
+<div class="col-md-6 col-lg-4">
+<div class="card clima-card h-100">
+<div class="card-body text-center">
+<div class="icone-clima" id="icone-santa-barbara">
+
+                        ⏳
+</div>
+<h3>Santa Bárbara d'Oeste</h3>
+<div class="temperatura" id="temp-santa-barbara">
+
+                        --°C
+</div>
+<p id="descricao-santa-barbara">
+
+                        Carregando clima...
+</p>
+<hr>
+<p>
+
+                        💧 Umidade:
+<strong id="umidade-santa-barbara">--%</strong>
+</p>
+<p>
+
+                        🌡️ Sensação:
+<strong id="sensacao-santa-barbara">--°C</strong>
+</p>
+<p>
+
+                        💨 Vento:
+<strong id="vento-santa-barbara">-- km/h</strong>
+</p>
+</div>
+</div>
+</div>
+
+<!-- NOVA ODESSA -->
+<div class="col-md-6 col-lg-4">
+<div class="card clima-card h-100">
+<div class="card-body text-center">
+<div class="icone-clima" id="icone-nova-odessa">
+
+                        ⏳
+</div>
+<h3>Nova Odessa</h3>
+<div class="temperatura" id="temp-nova-odessa">
+
+                        --°C
+</div>
+<p id="descricao-nova-odessa">
+
+                        Carregando clima...
+</p>
+<hr>
+<p>
+
+                        💧 Umidade:
+<strong id="umidade-nova-odessa">--%</strong>
+</p>
+<p>
+
+                        🌡️ Sensação:
+<strong id="sensacao-nova-odessa">--°C</strong>
+</p>
+<p>
+
+                        💨 Vento:
+<strong id="vento-nova-odessa">-- km/h</strong>
+</p>
+</div>
+</div>
+</div>
+
+<!-- SUMARÉ -->
+<div class="col-md-6 col-lg-4">
+<div class="card clima-card h-100">
+<div class="card-body text-center">
+<div class="icone-clima" id="icone-sumare">
+
+                        ⏳
+</div>
+<h3>Sumaré</h3>
+<div class="temperatura" id="temp-sumare">
+
+                        --°C
+</div>
+<p id="descricao-sumare">
+
+                        Carregando clima...
+</p>
+<hr>
+<p>
+
+                        💧 Umidade:
+<strong id="umidade-sumare">--%</strong>
+</p>
+<p>
+
+                        🌡️ Sensação:
+<strong id="sensacao-sumare">--°C</strong>
+</p>
+<p>
+
+                        💨 Vento:
+<strong id="vento-sumare">-- km/h</strong>
+</p>
+</div>
+</div>
+</div>
+
+<!-- LIMEIRA -->
+<div class="col-md-6 col-lg-4">
+<div class="card clima-card h-100">
+<div class="card-body text-center">
+<div class="icone-clima" id="icone-limeira">
+
+                        ⏳
+</div>
+<h3>Limeira</h3>
+<div class="temperatura" id="temp-limeira">
+
+                        --°C
+</div>
+<p id="descricao-limeira">
+
+                        Carregando clima...
+</p>
+<hr>
+<p>
+
+                        💧 Umidade:
+<strong id="umidade-limeira">--%</strong>
+</p>
+<p>
+
+                        🌡️ Sensação:
+<strong id="sensacao-limeira">--°C</strong>
+</p>
+<p>
+
+                        💨 Vento:
+<strong id="vento-limeira">-- km/h</strong>
+</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Nosso JavaScript do clima -->
+<script src="clima.js"></script>
+</body>
+</html>
+ 

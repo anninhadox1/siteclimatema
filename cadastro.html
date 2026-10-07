@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+
+          content="width=device-width, initial-scale=1.0">
+<title>ClimaTema - Cadastro</title>
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+
+          rel="stylesheet">
+<!-- CSS DO SITE -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================
+
+     BARRA DE NAVEGAÇÃO
+
+========================================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<div class="container">
+<a class="navbar-brand fw-bold"
+
+           href="index.html">
+<span class="flor-logo">🌸</span>
+
+          ClimaTema
+</a>
+
+<button class="navbar-toggler"
+
+                type="button"
+
+                data-bs-toggle="collapse"
+
+                data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse"
+
+             id="menu">
+<ul class="navbar-nav me-auto">
+
+<li class="nav-item">
+<a class="nav-link"
+
+                       href="index.html">
+
+                        Início
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+
+                       href="cidades.html">
+
+                        Cidades
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+
+                       href="clima.html">
+
+                        Clima
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active"
+
+                       href="cadastro.html">
+
+                        Cadastro
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- =========================================
+
+     ÁREA DE CADASTRO
+
+========================================= -->
+<main class="container py-5">
+
+<div class="cadastro-container">
+
+<!-- TÍTULO -->
+<div class="text-center mb-4">
+<div class="cadastro-flor">
+
+                🌸
+</div>
+<h1>
+
+                Já tem uma conta?
+                Cadastre-se!
+</h1>
+<p>
+
+                Preencha seus dados abaixo para se cadastrar.
+</p>
+</div>
+
+<!-- FORMULÁRIO -->
+<form id="formCadastro">
+
+<!-- NOME -->
+<div class="mb-3">
+<label for="nome"
+
+                       class="form-label">
+
+                    Nome completo
+</label>
+
+<input
+
+                    type="text"
+
+                    class="form-control"
+
+                    id="nome"
+
+                    placeholder="Digite seu nome completo"
+
+                    required>
+</div>
+
+<!-- EMAIL -->
+<div class="mb-3">
+<label for="email"
+
+                       class="form-label">
+
+                    E-mail
+</label>
+
+<input
+
+                    type="email"
+
+                    class="form-control"
+
+                    id="email"
+
+                    placeholder="exemplo@email.com"
+
+                    required>
+</div>
+
+<!-- CIDADE -->
+<div class="mb-3">
+<label for="cidade"
+
+                       class="form-label">
+
+                    Cidade
+</label>
+
+<select
+
+                    class="form-select"
+
+                    id="cidade"
+
+                    required>
+
+<option value="">
+
+                        Selecione sua cidade
+</option>
+
+<option value="Americana">
+
+                        Americana
+</option>
+
+<option value="Santa Bárbara d'Oeste">
+
+                        Santa Bárbara d'Oeste
+</option>
+
+<option value="Nova Odessa">
+
+                        Nova Odessa
+</option>
+
+<option value="Sumaré">
+
+                        Sumaré
+</option>
+
+<option value="Limeira">
+
+                        Limeira
+</option>
+
+</select>
+</div>
+
+<!-- SENHA -->
+<div class="mb-3">
+<label for="senha"
+
+                       class="form-label">
+
+                    Senha
+</label>
+
+<input
+
+                    type="password"
+
+                    class="form-control"
+
+                    id="senha"
+
+                    placeholder="Crie uma senha"
+
+                    minlength="6"
+
+                    required>
+
+<small class="text-muted">
+
+                    A senha deve ter pelo menos
+
+                    6 caracteres.
+</small>
+</div>
+
+<!-- CONFIRMAR SENHA -->
+<div class="mb-4">
+<label for="confirmarSenha"
+
+                       class="form-label">
+
+                    Confirmar senha
+</label>
+
+<input
+
+                    type="password"
+
+                    class="form-control"
+
+                    id="confirmarSenha"
+
+                    placeholder="Digite sua senha novamente"
+
+                    minlength="6"
+
+                    required>
+</div>
+
+<!-- ACEITAR TERMOS -->
+<div class="form-check mb-4">
+<input
+
+                    class="form-check-input"
+
+                    type="checkbox"
+
+                    id="termos"
+
+                    required>
+
+<label
+
+                    class="form-check-label"
+
+                    for="termos">
+
+                    Confirmo que as informações
+
+                    preenchidas estão corretas.
+</label>
+</div>
+
+<!-- BOTÃO -->
+<button
+
+                type="submit"
+
+                class="btn btn-cadastro w-100">
+
+                🌸 Cadastrar
+</button>
+
+</form>
+
+<!-- =================================
+
+             MENSAGEM DE SUCESSO / ERRO
+
+        ================================== -->
+<div
+
+            id="mensagemCadastro"
+
+            class="mensagem-cadastro">
+</div>
+
+</div>
+
+</main>
+
+<!-- =========================================
+
+     RODAPÉ
+
+========================================= -->
+<footer class="text-center">
+<div class="container">
+<h5>
+
+            🌸 ClimaTema
+            
+</h5>
+<p>
+
+            Conheça nossa região e fique
+
+            por dentro do clima.
+</p>
+<small>
+
+            Projeto escolar
+</small>
+</div>
+</footer>
+
+<!-- =========================================
+
+     BOOTSTRAP
+
+========================================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- =========================================
+
+     JAVASCRIPT DO CADASTRO
+
+========================================= -->
+<script>
+
+    const formulario =
+
+        document.getElementById("formCadastro");
+
+
+    const mensagem =
+
+        document.getElementById("mensagemCadastro");
+
+
+    formulario.addEventListener(
+
+        "submit",
+
+        function(evento) {
+
+
+            // IMPEDE A PÁGINA DE RECARREGAR
+
+            evento.preventDefault();
+
+
+            // PEGA OS DADOS
+
+            const nome =
+
+                document.getElementById("nome").value;
+
+
+            const senha =
+
+                document.getElementById("senha").value;
+
+
+            const confirmarSenha =
+
+                document.getElementById("confirmarSenha").value;
+
+
+            // =================================
+
+            // VERIFICA AS SENHAS
+
+            // =================================
+
+            if (senha !== confirmarSenha) {
+
+
+                mensagem.innerHTML =
+
+                    "❌ As senhas não são iguais. Tente novamente.";
+
+
+                mensagem.className =
+
+                    "mensagem-cadastro erro";
+
+
+                return;
+
+            }
+
+
+            // =================================
+
+            // CADASTRO CONCLUÍDO
+
+            // =================================
+
+            mensagem.innerHTML =
+
+                "🌸 Cadastro concluído com sucesso, "
+
+                + nome +
+
+                "!";
+
+
+            mensagem.className =
+
+                "mensagem-cadastro sucesso";
+
+
+            // LIMPA OS CAMPOS
+
+            formulario.reset();
+
+
+            // VOLTA PARA A MENSAGEM
+
+            mensagem.scrollIntoView({
+
+                behavior: "smooth",
+
+                block: "center"
+
+            });
+
+
+        }
+
+    );
+</script>
+
+</body>
+</html>
+ 

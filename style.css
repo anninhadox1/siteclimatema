@@ -1,0 +1,1360 @@
+/* =========================================
+
+   CONFIGURAÇÕES GERAIS
+
+========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #3d2935;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            #fff8fc,
+
+            #ffeaf4
+
+        );
+
+    min-height: 100vh;
+
+    position: relative;
+
+}
+
+
+/* =========================================
+
+   FLORZINHAS CAINDO NO FUNDO 🌸
+
+========================================= */
+
+body::before {
+
+    content: "🌸  🌸  🌸  🌸  🌸  🌸  🌸  🌸  🌸  🌸";
+
+    position: fixed;
+
+    top: -100px;
+
+    left: 0;
+
+    width: 100%;
+
+    font-size: 25px;
+
+    word-spacing: 70px;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    opacity: 0.35;
+
+    animation: floresCaindo 12s linear infinite;
+
+}
+
+
+/* SEGUNDA CAMADA DE FLORES */
+
+body::after {
+
+    content: "🌸  🌸  🌸  🌸  🌸  🌸  🌸";
+
+    position: fixed;
+
+    top: -200px;
+
+    left: 8%;
+
+    width: 100%;
+
+    font-size: 18px;
+
+    word-spacing: 100px;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    opacity: 0.25;
+
+    animation: floresCaindo2 17s linear infinite;
+
+}
+
+
+@keyframes floresCaindo {
+
+    0% {
+
+        transform: translateY(-150px) rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: translateY(120vh) rotate(360deg);
+
+    }
+
+}
+
+
+@keyframes floresCaindo2 {
+
+    0% {
+
+        transform: translateY(-200px) rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: translateY(130vh) rotate(-360deg);
+
+    }
+
+}
+
+
+/* CONTEÚDO FICA NA FRENTE DAS FLORES */
+
+nav,
+
+header,
+
+main,
+
+section,
+
+footer {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+/* =========================================
+
+   MENU ROSA
+
+========================================= */
+
+.navbar {
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #d63384,
+
+            #ed64a6,
+
+            #ff8fc7
+
+        ) !important;
+
+    padding: 15px 0;
+
+    box-shadow:
+
+        0 4px 18px rgba(214, 51, 132, 0.25);
+
+}
+
+
+.navbar-brand {
+
+    color: white !important;
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+}
+
+
+.nav-link {
+
+    color: white !important;
+
+    margin: 0 7px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-link:hover {
+
+    color: #ffe4f1 !important;
+
+    transform: translateY(-2px);
+
+}
+
+
+.nav-link.active {
+
+    font-weight: bold;
+
+    color: white !important;
+
+}
+
+
+/* =========================================
+
+   FLOR DO LOGO GIRANDO 🌸
+
+========================================= */
+
+.flor-logo {
+
+    display: inline-block;
+
+    font-size: 29px;
+
+    margin-right: 5px;
+
+    transform-origin: center;
+
+    animation: girarFlor 3s linear infinite;
+
+}
+
+
+@keyframes girarFlor {
+
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+/* =========================================
+
+   CABEÇALHO
+
+========================================= */
+
+header {
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+
+            circle at 20% 30%,
+
+            #ffd1e6,
+
+            transparent 35%
+
+        ),
+
+        radial-gradient(
+
+            circle at 80% 60%,
+
+            #ffc2df,
+
+            transparent 35%
+
+        ),
+
+        linear-gradient(
+
+            135deg,
+
+            #fff7fb,
+
+            #ffe5f1
+
+        );
+
+}
+
+
+/* TÍTULO PRIMAVERA */
+
+header h1 {
+
+    color: #d63384 !important;
+
+    font-size: 4.5rem;
+
+    font-weight: bold;
+
+    text-shadow:
+
+        2px 2px 0 #ffb8d8,
+
+        0 0 20px rgba(214, 51, 132, 0.18);
+
+    animation: tituloAparecer 1s ease;
+
+}
+
+
+@keyframes tituloAparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+header p {
+
+    animation: textoAparecer 1.4s ease;
+
+}
+
+
+@keyframes textoAparecer {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* =========================================
+
+   TÍTULOS
+
+========================================= */
+
+h2 {
+
+    color: #d63384;
+
+    font-weight: bold;
+
+}
+
+
+h3 {
+
+    color: #df4f95;
+
+    font-weight: bold;
+
+}
+
+
+h5 {
+
+    color: #c72f79;
+
+}
+
+
+/* =========================================
+
+   CARDS
+
+========================================= */
+
+.card {
+
+    border: none;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    box-shadow:
+
+        0 6px 20px rgba(214, 51, 132, 0.12);
+
+    transition:
+
+        transform 0.4s ease,
+
+        box-shadow 0.4s ease;
+
+    animation:
+
+        cardAparecer 0.9s ease forwards;
+
+}
+
+
+@keyframes cardAparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(35px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* CARD SOBE QUANDO PASSA O MOUSE */
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+        0 15px 35px rgba(214, 51, 132, 0.25);
+
+}
+
+
+/* =========================================
+
+   IMAGENS APARECENDO SUAVEMENTE
+
+========================================= */
+
+.card img,
+
+.galeria-cidades img {
+
+    opacity: 0;
+
+    animation:
+
+        imagemAparecer 1.2s ease forwards;
+
+    transition:
+
+        transform 0.5s ease,
+
+        filter 0.5s ease;
+
+}
+
+
+@keyframes imagemAparecer {
+
+    0% {
+
+        opacity: 0;
+
+        transform: scale(0.92);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* IMAGENS APARECEM UMA DE CADA VEZ */
+
+.row .col:nth-child(1) img {
+
+    animation-delay: 0.1s;
+
+}
+
+.row .col:nth-child(2) img {
+
+    animation-delay: 0.3s;
+
+}
+
+.row .col:nth-child(3) img {
+
+    animation-delay: 0.5s;
+
+}
+
+.row .col:nth-child(4) img {
+
+    animation-delay: 0.7s;
+
+}
+
+.row .col:nth-child(5) img {
+
+    animation-delay: 0.9s;
+
+}
+
+
+/* TAMANHO DAS FOTOS DOS CARDS */
+
+.card-img-top {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+/* ZOOM SUAVE */
+
+.card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =========================================
+
+   BOTÕES ROSA
+
+========================================= */
+
+.btn-success {
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #d63384,
+
+            #ed64a6
+
+        ) !important;
+
+    border: none !important;
+
+    border-radius: 25px;
+
+    padding: 9px 22px;
+
+    color: white;
+
+    transition: 0.3s;
+
+}
+
+
+.btn-success:hover {
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #bd286f,
+
+            #df4f95
+
+        ) !important;
+
+    transform: scale(1.05);
+
+}
+
+
+/* =========================================
+
+   GALERIA
+
+========================================= */
+
+.galeria-cidades img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow:
+
+        0 6px 20px rgba(214, 51, 132, 0.15);
+
+}
+
+
+.galeria-cidades img:hover {
+
+    transform: scale(1.04);
+
+    box-shadow:
+
+        0 12px 30px rgba(214, 51, 132, 0.25);
+
+}
+
+
+/* =========================================
+
+   MAPAS
+
+========================================= */
+
+iframe {
+
+    border-radius: 18px;
+
+    box-shadow:
+
+        0 6px 20px rgba(214, 51, 132, 0.15);
+
+}
+
+
+/* =========================================
+
+   RODAPÉ
+
+========================================= */
+
+footer {
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #c72f79,
+
+            #e754a6,
+
+            #ff8fc7
+
+        ) !important;
+
+    color: white !important;
+
+    padding: 30px 0;
+
+    margin-top: 50px;
+
+}
+
+
+footer h5 {
+
+    color: white;
+
+}
+
+
+/* =========================================
+
+   CELULAR
+
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+
+        min-height: 350px;
+
+    }
+
+    header h1 {
+
+        font-size: 3rem;
+
+    }
+
+    .card-img-top {
+
+        height: 200px;
+
+    }
+
+    body::before {
+
+        font-size: 18px;
+
+        word-spacing: 30px;
+
+    }
+
+}
+ header h1 {
+   font-size: 2.5rem !important;
+}
+
+/* =================================
+
+   CORREÇÕES
+
+================================= */
+
+/* TEXTO PRINCIPAL MENOR */
+
+header h1 {
+
+    font-size: 3rem !important;
+
+    line-height: 1.15;
+
+}
+
+
+/* BOTÃO CONHECER */
+
+header .btn,
+
+.btn-success {
+
+    background: #d63384 !important;
+
+    color: white !important;
+
+    border: none !important;
+
+    border-radius: 30px;
+
+    padding: 12px 30px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.25);
+
+    transition: all 0.3s ease;
+
+}
+
+header .btn:hover,
+
+.btn-success:hover {
+
+    background: #bd286f !important;
+
+    transform: translateY(-3px) scale(1.05);
+
+    box-shadow: 0 8px 20px rgba(214, 51, 132, 0.35);
+
+}
+
+
+/* =================================
+
+   CARDS / IMAGENS
+
+================================= */
+
+.card {
+
+    transition: all 0.4s ease !important;
+
+}
+
+/* CARD AUMENTA AO PASSAR O MOUSE */
+
+.card:hover {
+
+    transform: translateY(-8px) scale(1.04) !important;
+
+    box-shadow:
+
+        0 15px 35px rgba(214, 51, 132, 0.30) !important;
+
+}
+
+
+/* FOTO */
+
+.card img {
+
+    transition: transform 0.5s ease !important;
+
+}
+
+/* FOTO AUMENTA */
+
+.card:hover img {
+
+    transform: scale(1.10) !important;
+
+}
+
+
+/* =================================
+
+   ENTRADA SUAVE DOS CARDS
+
+================================= */
+
+.card {
+
+    opacity: 0;
+
+    animation: entradaCard 0.8s ease forwards;
+
+}
+
+@keyframes entradaCard {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(35px) scale(0.95);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
+
+
+/* UM CARD DE CADA VEZ */
+
+.row .col:nth-child(1) .card {
+
+    animation-delay: 0.1s;
+
+}
+
+.row .col:nth-child(2) .card {
+
+    animation-delay: 0.25s;
+
+}
+
+.row .col:nth-child(3) .card {
+
+    animation-delay: 0.4s;
+
+}
+
+.row .col:nth-child(4) .card {
+
+    animation-delay: 0.55s;
+
+}
+
+.row .col:nth-child(5) .card {
+
+    animation-delay: 0.7s;
+
+}
+ /* TÍTULO PRIMAVERA DELICADO */
+
+.titulo-primavera {
+
+    font-size: 2.4rem !important;
+
+    font-weight: 500;
+
+    color: #d63384 !important;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+
+    text-shadow: 0 2px 8px rgba(214, 51, 132, 0.15);
+
+    animation: aparecerTitulo 1s ease;
+
+}
+
+@keyframes aparecerTitulo {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+ /* ==========================
+
+   PÁGINA DO CLIMA
+
+========================== */
+
+.titulo-clima {
+
+    color: #d63384;
+
+    font-size: 2.6rem;
+
+    font-weight: 600;
+
+}
+
+.clima-card {
+
+    border: 2px solid #ffd0e5;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+
+        145deg,
+
+        #ffffff,
+
+        #fff0f7
+
+    );
+
+    box-shadow:
+
+        0 8px 25px rgba(214, 51, 132, 0.15);
+
+    transition: 0.4s;
+
+}
+
+.clima-card:hover {
+
+    transform: translateY(-8px) scale(1.03);
+
+    box-shadow:
+
+        0 15px 35px rgba(214, 51, 132, 0.25);
+
+}
+
+.clima-card h3 {
+
+    color: #d63384;
+
+    margin-top: 10px;
+
+}
+
+.icone-clima {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+}
+
+.temperatura {
+
+    font-size: 3rem;
+
+    font-weight: bold;
+
+    color: #d63384;
+
+    margin: 10px 0;
+
+}
+
+.clima-card hr {
+
+    border-color: #f3a7ca;
+
+}
+
+.clima-card p {
+
+    color: #59404d;
+
+}
+ /* =========================================
+
+   PÁGINA DE CADASTRO
+
+========================================= */
+
+
+.cadastro-container {
+
+    max-width: 600px;
+
+    margin: 25px auto 60px auto;
+
+    padding: 40px;
+
+    background:
+
+        rgba(255, 255, 255, 0.96);
+
+    border: 2px solid #ffd1e5;
+
+    border-radius: 28px;
+
+    box-shadow:
+
+        0 10px 35px
+
+        rgba(214, 51, 132, 0.18);
+
+}
+
+
+/* TÍTULO */
+
+.cadastro-container h1 {
+
+    color: #d63384;
+
+    font-size: 2.3rem;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+
+
+.cadastro-container p {
+
+    color: #6b4a5b;
+
+}
+
+
+.cadastro-flor {
+
+    font-size: 52px;
+
+    margin-bottom: 5px;
+
+    animation:
+
+        girarFlor 4s linear infinite;
+
+}
+
+
+/* NOMES DOS CAMPOS */
+
+.cadastro-container .form-label {
+
+    color: #a62d6b;
+
+    font-weight: 600;
+
+}
+
+
+/* INPUTS */
+
+.cadastro-container .form-control,
+
+.cadastro-container .form-select {
+
+    padding: 12px 15px;
+
+    border: 2px solid #ffd0e5;
+
+    border-radius: 15px;
+
+    background: #fffafd;
+
+    transition: 0.3s;
+
+}
+
+
+/* QUANDO CLICAR NO CAMPO */
+
+.cadastro-container .form-control:focus,
+
+.cadastro-container .form-select:focus {
+
+    border-color: #d63384;
+
+    background: white;
+
+    box-shadow:
+
+        0 0 0 4px
+
+        rgba(214, 51, 132, 0.12);
+
+}
+
+
+/* CHECKBOX */
+
+.form-check-input:checked {
+
+    background-color: #d63384;
+
+    border-color: #d63384;
+
+}
+
+
+/* BOTÃO CADASTRAR */
+
+.btn-cadastro {
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #d63384,
+
+            #ed64a6
+
+        );
+
+    color: white;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 14px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+/* BOTÃO QUANDO PASSA O MOUSE */
+
+.btn-cadastro:hover {
+
+    color: white;
+
+    transform:
+
+        translateY(-3px)
+
+        scale(1.02);
+
+    box-shadow:
+
+        0 8px 22px
+
+        rgba(214, 51, 132, 0.30);
+
+}
+
+
+/* =========================================
+
+   MENSAGENS
+
+========================================= */
+
+.mensagem-cadastro {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+}
+
+
+/* SUCESSO */
+
+.mensagem-cadastro.sucesso {
+
+    display: block;
+
+    color: #a82868;
+
+    background: #ffe5f1;
+
+    border: 2px solid #f3a7ca;
+
+    animation:
+
+        mensagemAparecer 0.5s ease;
+
+}
+
+
+/* ERRO */
+
+.mensagem-cadastro.erro {
+
+    display: block;
+
+    color: #a52828;
+
+    background: #ffe5e5;
+
+    border: 2px solid #ffb4b4;
+
+    animation:
+
+        mensagemAparecer 0.5s ease;
+
+}
+
+
+/* ANIMAÇÃO DA MENSAGEM */
+
+@keyframes mensagemAparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+
+            translateY(15px)
+
+            scale(0.96);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform:
+
+            translateY(0)
+
+            scale(1);
+
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .cadastro-container {
+
+        padding: 25px;
+
+        margin-top: 10px;
+
+    }
+
+
+    .cadastro-container h1 {
+
+        font-size: 1.9rem;
+
+    }
+
+}
+ 

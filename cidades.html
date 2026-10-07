@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+         content="width=device-width, initial-scale=1.0">
+<title>Climatema - Cidades da Região</title>
+<!-- BOOTSTRAP -->
+<link
+       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+       rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ==================================================
+    BARRA SUPERIOR
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="flor-logo">🌸</span>
+   Climatema
+</a>
+
+<!-- BOTÃO DO MENU NO CELULAR -->
+<button
+           class="navbar-toggler"
+           type="button"
+           data-bs-toggle="collapse"
+           data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<!-- LINKS DO MENU -->
+<ul class="navbar-nav me-auto">
+<li class="nav-item">
+<a class="nav-link"
+                      href="index.html">
+                       Início
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="cidades.html">
+                       Cidades
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="clima.html">
+
+        Clima
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="cadastro.html">
+
+        Cadastro
+</a>
+</li>
+ 
+</ul>
+
+<!-- PESQUISA -->
+<form class="d-flex">
+<input
+                   class="form-control me-2"
+                   type="search"
+                   placeholder="Pesquisar">
+<button
+                   class="btn btn-light"
+                   type="submit">
+                   Pesquisar
+</button>
+</form>
+</div>
+</div>
+</nav>
+
+<!-- =========================================
+
+     CIDADES DA REGIÃO
+
+========================================= -->
+<main class="container py-5">
+<div class="text-center mb-5">
+<h1 class="titulo-cidades">🌸 Cidades da Região</h1>
+<p class="subtitulo-cidades">
+
+            Conheça algumas cidades da nossa região e descubra
+
+            seus principais lugares, atrações e pontos turísticos.
+</p>
+</div>
+
+<!-- =========================================
+
+         CARDS DAS 5 CIDADES
+
+    ========================================== -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+
+<!-- AMERICANA -->
+<div class="col">
+<div class="card cidade-card h-100 shadow">
+<img
+
+                    src="./img/americana climatema.jpg"
+
+                    class="card-img-top"
+
+                    alt="Americana">
+<div class="card-body text-center">
+<h5 class="fw-bold">
+
+                        Americana
+</h5>
+<p>São Paulo</p>
+<a href="#americana"
+
+                       class="btn btn-success">
+
+                        Conhecer
+</a>
+</div>
+</div>
+</div>
+
+<!-- SANTA BÁRBARA D'OESTE -->
+<div class="col">
+<div class="card cidade-card h-100 shadow">
+<img
+
+                    src="./img/sbo clima.jpg"
+
+                    class="card-img-top"
+
+                    alt="Santa Bárbara d'Oeste">
+<div class="card-body text-center">
+<h5 class="fw-bold">
+
+                        Santa Bárbara d'Oeste
+</h5>
+<p>São Paulo</p>
+<a href="#santa-barbara"
+
+                       class="btn btn-success">
+
+                        Conhecer
+</a>
+</div>
+</div>
+</div>
+
+<!-- NOVA ODESSA -->
+<div class="col">
+<div class="card cidade-card h-100 shadow">
+<img
+
+                    src="./img/nova odessa clima.jpg"
+
+                    class="card-img-top"
+
+                    alt="Nova Odessa">
+<div class="card-body text-center">
+<h5 class="fw-bold">
+
+                        Nova Odessa
+</h5>
+<p>São Paulo</p>
+<a href="#nova-odessa"
+
+                       class="btn btn-success">
+
+                        Conhecer
+</a>
+</div>
+</div>
+</div>
+
+<!-- SUMARÉ -->
+<div class="col">
+<div class="card cidade-card h-100 shadow">
+<img
+
+                    src="./img/sumare clima.jpg"
+
+                    class="card-img-top"
+
+                    alt="Sumaré">
+<div class="card-body text-center">
+<h5 class="fw-bold">
+
+                        Sumaré
+</h5>
+<p>São Paulo</p>
+<a href="#sumare"
+
+                       class="btn btn-success">
+
+                        Conhecer
+</a>
+</div>
+</div>
+</div>
+
+<!-- LIMEIRA -->
+<div class="col">
+<div class="card cidade-card h-100 shadow">
+<img
+
+                    src="./img/limeira clikma.jpg"
+
+                    class="card-img-top"
+
+                    alt="Limeira">
+<div class="card-body text-center">
+<h5 class="fw-bold">
+
+                        Limeira
+</h5>
+<p>São Paulo</p>
+<a href="#limeira"
+
+                       class="btn btn-success">
+
+                        Conhecer
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- =========================================
+
+         AMERICANA
+
+    ========================================== -->
+<section id="americana" class="cidade-detalhes">
+<h2>🌸 Americana</h2>
+<h3>Descrição</h3>
+<p>
+
+            Americana é uma cidade do interior do estado de São Paulo,
+
+            localizada na Região Metropolitana de Campinas.
+</p>
+<h3> Praças</h3>
+<ul>
+<li>Praça Comendador Müller</li>
+<li>Praça da Bandeira</li>
+</ul>
+<h3>📍 Pontos Turísticos</h3>
+<ul>
+<li>Parque Ecológico</li>
+<li>Jardim Botânico</li>
+<li>Basílica Santo Antônio de Pádua</li>
+</ul>
+<h3> Atrações</h3>
+<p>
+
+            A cidade possui parques, áreas verdes, espaços culturais
+
+            e opções de lazer para moradores e visitantes.
+</p>
+<h3>Galeria de Fotos</h3>
+<div class="row g-3 galeria-cidades">
+<div class="col-md-4">
+<img src="./img/americana-aba cidades.jpg"
+
+                     class="img-fluid"
+
+                     alt="Americana">
+</div>
+<div class="col-md-4">
+<img src="./img/americana 2-aba cidades.jpg"
+
+                     class="img-fluid"
+
+                     alt="Americana">
+</div>
+<div class="col-md-4">
+<img src="./img/americana 3-aba cidades.jpg"
+
+                     class="img-fluid"
+
+                     alt="Americana">
+</div>
+</div>
+<h3 class="mt-4"> Mapa</h3>
+<iframe
+
+            src="https://www.google.com/maps?q=Americana,SP&output=embed"
+
+            width="100%"
+
+            height="350"
+
+            style="border:0;"
+
+            loading="lazy">
+</iframe>
+</section>
+
+<!-- =====================================
+
+     SANTA BÁRBARA D'OESTE
+
+====================================== -->
+<section id="santa-barbara" class="cidade-detalhes py-5">
+<h2>🌸 Santa Bárbara d'Oeste</h2>
+<h3> Descrição</h3>
+<p>
+
+        Santa Bárbara d'Oeste é uma cidade do interior do estado
+
+        de São Paulo, vizinha de Americana. O município possui
+
+        história, cultura, áreas verdes e diversas opções de lazer.
+</p>
+
+<h3> Praças</h3>
+<ul>
+<li>Praça Central</li>
+<li>Praça Coronel Luís Alves</li>
+<li>Praça Rossi Armênio</li>
+</ul>
+
+<h3>📍 Pontos Turísticos</h3>
+<ul>
+<li>Parque dos Ipês</li>
+<li>Parque Araçariguama</li>
+<li>Museu da Imigração</li>
+<li>Centro de Memória</li>
+</ul>
+
+<h3>Atrações</h3>
+<p>
+
+        Entre as atrações da cidade estão parques para caminhadas
+
+        e lazer, espaços culturais, museus e locais que preservam
+
+        a história do município.
+</p>
+
+<h3> Galeria de Fotos</h3>
+<div class="row g-3 galeria-cidades">
+<div class="col-md-4">
+<img src="./img/sbo 1-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Santa Bárbara d'Oeste">
+</div>
+<div class="col-md-4">
+<img src="./img/sbo 2-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Santa Bárbara d'Oeste">
+</div>
+<div class="col-md-4">
+<img src="./img/sbo 3-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Santa Bárbara d'Oeste">
+</div>
+</div>
+
+<h3 class="mt-4"> Mapa</h3>
+<iframe
+
+        src="https://www.google.com/maps?q=Santa+Barbara+d'Oeste,SP&output=embed"
+
+        width="100%"
+
+        height="350"
+
+        style="border:0;"
+
+        loading="lazy">
+</iframe>
+</section>
+ 
+
+
+
+ <!-- =====================================
+
+     NOVA ODESSA
+
+====================================== -->
+<section id="nova-odessa" class="cidade-detalhes py-5">
+<h2>🌸 Nova Odessa</h2>
+<h3> Descrição</h3>
+<p>
+
+        Nova Odessa é uma cidade do interior de São Paulo conhecida
+
+        por suas áreas verdes, espaços de lazer e contato com a natureza.
+</p>
+<h3> Praças</h3>
+<ul>
+<li>Praça Central José Gazzetta</li>
+<li>Praça dos Três Poderes</li>
+<li>Praças e áreas verdes municipais</li>
+</ul>
+<h3>📍 Pontos Turísticos</h3>
+<ul>
+<li>Jardim Botânico Plantarum</li>
+<li>Parque Ecológico Isidoro Bordon</li>
+<li>Centro de Cultura Herman Jankovitz</li>
+</ul>
+<h3> Atrações</h3>
+<p>
+
+        Nova Odessa possui jardins, parques, espaços culturais
+
+        e atrações relacionadas à natureza e à história da cidade.
+</p>
+<h3> Galeria de Fotos</h3>
+<div class="row g-3 galeria-cidades">
+<div class="col-md-4">
+<img src="./img/nova odessa 1-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Nova Odessa">
+</div>
+<div class="col-md-4">
+<img src="./img/nova odessa 2-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Nova Odessa">
+</div>
+<div class="col-md-4">
+<img src="./img/nova odessa 3-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Nova Odessa">
+</div>
+</div>
+<h3 class="mt-4">Mapa</h3>
+<iframe
+
+        src="https://www.google.com/maps?q=Nova+Odessa,SP&output=embed"
+
+        width="100%"
+
+        height="350"
+
+        style="border:0;"
+
+        loading="lazy">
+</iframe>
+</section>
+
+<!-- =====================================
+
+     SUMARÉ
+
+====================================== -->
+<section id="sumare" class="cidade-detalhes py-5">
+<h2>🌸 Sumaré</h2>
+<h3> Descrição</h3>
+<p>
+
+        Sumaré faz parte da Região Metropolitana de Campinas
+
+        e possui espaços históricos, culturais e áreas destinadas
+
+        ao lazer da população.
+</p>
+<h3> Praças</h3>
+<ul>
+<li>Praça Manoel de Vasconcellos</li>
+<li>Praça das Bandeiras</li>
+<li>Praças da região central</li>
+</ul>
+<h3>📍 Pontos Turísticos</h3>
+<ul>
+<li>Estação Ferroviária de Sumaré</li>
+<li>Centro de Memória</li>
+<li>Represa Marcelo Pedroni</li>
+<li>Bosque dos Lagos</li>
+</ul>
+<h3> Atrações</h3>
+<p>
+
+        A cidade possui atrações históricas e culturais,
+
+        áreas verdes e espaços destinados ao lazer e à convivência.
+</p>
+<h3> Galeria de Fotos</h3>
+<div class="row g-3 galeria-cidades">
+<div class="col-md-4">
+<img src="./img/sumare 1-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Sumaré">
+</div>
+<div class="col-md-4">
+<img src="./img/sumare 2-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Sumaré">
+</div>
+<div class="col-md-4">
+<img src="./img/sumare 3-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Sumaré">
+</div>
+</div>
+<h3 class="mt-4"> Mapa</h3>
+<iframe
+
+        src="https://www.google.com/maps?q=Sumare,SP&output=embed"
+
+        width="100%"
+
+        height="350"
+
+        style="border:0;"
+
+        loading="lazy">
+</iframe>
+</section>
+
+<!-- =====================================
+
+     LIMEIRA
+
+====================================== -->
+<section id="limeira" class="cidade-detalhes py-5">
+<h2>🌸 Limeira</h2>
+<h3> Descrição</h3>
+<p>
+
+        Limeira é uma importante cidade do interior paulista,
+
+        conhecida por sua história, cultura, comércio e áreas de lazer.
+</p>
+<h3> Praças</h3>
+<ul>
+<li>Praça Toledo Barros</li>
+<li>Praça Coronel Flamínio</li>
+<li>Praça Dr. Luciano Esteves</li>
+</ul>
+<h3>📍 Pontos Turísticos</h3>
+<ul>
+<li>Parque Cidade de Limeira</li>
+<li>Horto Florestal</li>
+<li>Palacete Levy</li>
+<li>Teatro Vitória</li>
+</ul>
+<h3> Atrações</h3>
+<p>
+
+        Limeira possui parques, espaços culturais,
+
+        construções históricas e diversas opções de lazer.
+</p>
+<h3> Galeria de Fotos</h3>
+<div class="row g-3 galeria-cidades">
+<div class="col-md-4">
+<img src="./img/limeirra 1-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Limeira">
+</div>
+<div class="col-md-4">
+<img src="./img/limeira 2-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Limeira">
+</div>
+<div class="col-md-4">
+<img src="./img/limeira 3-aba cidades.jpg"
+
+                 class="img-fluid"
+
+                 alt="Limeira">
+</div>
+</div>
+<h3 class="mt-4"> Mapa</h3>
+<iframe
+
+        src="https://www.google.com/maps?q=Limeira,SP&output=embed"
+
+        width="100%"
+
+        height="350"
+
+        style="border:0;"
+
+        loading="lazy">
+</iframe>
+</section>
+ Google Maps 
+Encontre empresas locais, visualize mapas e obtenha rotas de tráfego no Google Maps.
+ Site produzido por Anna C.
